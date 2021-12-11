@@ -4,7 +4,7 @@ The Smart Driver application is a big data application that implements lambda ar
 
 ### Screen shot
 ![serving_layer](/screenshot/serving_layer.PNG?raw=true "serving_layer")
-![speed_layer](/screenshot/speed_layer.PNG?raw=true "speed_layer")
+![speed_layer](/screenshot/speed_layer.png?raw=true "speed_layer")
 
 ### Demo video
 Please check demo_video.mp4

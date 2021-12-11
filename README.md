@@ -18,16 +18,12 @@ Run combine_csv.py to combine mutliple taxi csv records into one
 ## Create hive and hbase table
 See the creaet_hive_talbe.hql and create_hbase_table.hql in the root directory
 
-## Run the serving layer 
-### Copy the application to the server
-scp -i ~/.ssh/guahuang.pem -r ~/Desktop/app/ guahuang@ec2-52-14-115-151.us-east-2.compute.amazonaws.com:~/project
+## Deploy the serving layer 
+### Copy the serving layer app to the server and run
 npm i kafka-node
 npm install
-### Run it 
-node app.js 3711 172.31.39.49 8070 b-2.mpcs53014-kafka.198nfg.c7.kafka.us-east-2.amazonaws.com:9092,b-1.mpcs53014-kafka.198nfg.c7.kafka.us-east-2.amazonaws.com:9092
+### launch cmd 
+node app.js 3711 172.31.39.49 8070 kafaka_broker
 
-## Run the speed layer
+## Deploy the speed layer
 spark-submit --master local[2] --driver-java-options "-Dlog4j.configuration=file:///home/hadoop/ss.log4j.properties" --class StreamFlights uber-untitled3-1.0-SNAPSHOT.jar kafka_broker
-
-
- 

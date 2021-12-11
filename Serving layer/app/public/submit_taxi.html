@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+<head>
+  <title>Submit Weather</title>
+  <link type="text/css" rel="stylesheet" href="/elegant-aero.css" />
+</head>
+<!-- Thanks to Mario C. E. Freese <mcefreese@gmail.com> for permission to use background image -->
+<body style='background-image:URL("taxi.jpg");background-repeat:no-repeat;background-position:center top;-webkit-background-size:100%;-moz-background-size:100%;-o-background-size:100%;background-size: 100%;'>
+<p style="margin-bottom:5px"/>
+<h2 class="elegant-aero" style="margin-left:30%;text-align:center;display:inline-block;color:#5E5E5E;background:#FFFFFF">&nbsp;Submit weather report&nbsp;</h2>
+<form action="/submit.html" style="background:#FFFFFF;width:60%;margin:auto"  method="get" class="elegant-aero">
+<!--  <label>-->
+<!--    <span>Station:</span> <input type="text" name="station" value="0"/>-->
+<!--  </label>-->
+  <label style="font-weight:bold;color:#5E5E5E">
+    <span>start Area:</span> <input type="text" name="area" value="1"/>
+    <span>start month:</span> <input type="text" name="month" value="1"/>
+    <span>start day:</span> <input type="text" name="day" value="1"/>
+    <span>start hour:</span> <input type="text" name="hour" value="0"/>
+    <span>start minute:</span> <input type="text" name="minute" value="0"/>
+    <span>end hour:</span> <input type="text" name="ehour" value="0"/>
+    <span>end minute:</span> <input type="text" name="eminute" value="0"/>
+    <span>trip miles:</span> <input type="text" name="tripm" value="0.7"/>
+    <span>fare:</span> <input type="text" name="fare" value="0.1"/>
+    <span>tips:</span> <input type="text" name="tips" value="0.1"/>
+    <span>trip total:</span> <input type="text" name="total" value="5"/>
+  </label>
+  <label>
+    <span>&nbsp;</span><input type="submit" value="Submit">
+  </label>
+</form>
+<iframe frameBorder="0" name="results_iframe" style="width:100%"/>
+</body>
+</html>
